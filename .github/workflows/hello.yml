@@ -1,0 +1,9 @@
+name: my first practice
+
+on:
+push:
+branches: [main]
+
+jobs:
+  hello:
+  runs-on: ubuntu-lates
