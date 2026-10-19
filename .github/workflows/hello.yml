@@ -1,9 +1,13 @@
-name: my first practice
+name: My First Action
 
 on:
-push:
-branches: [main]
+  push:
+    branches: [main]
 
 jobs:
   hello:
-  runs-on: ubuntu-lates
+    runs-on: ubuntu-latest
+    steps:
+      - name: Say hello
+        run: echo "Hello from GitHub Actions!"
+        
